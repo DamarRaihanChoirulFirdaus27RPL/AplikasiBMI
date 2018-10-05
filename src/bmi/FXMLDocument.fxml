@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="356.0" style="-fx-background-color: DD5145;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bmi.FXMLDocumentController">
+    <children>
+      <Label id="judul" fx:id="judul" layoutX="81.0" layoutY="14.0" prefHeight="27.0" prefWidth="187.0" text="     Body Maks Index" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="0.2" specularExponent="31.22" surfaceScale="4.3">
+               <bumpInput>
+                  <DropShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label id="nama" fx:id="nama" layoutX="23.0" layoutY="50.0" prefHeight="21.0" prefWidth="121.0" text="NAMA                :">
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label id="tb" fx:id="tb" layoutX="23.0" layoutY="84.0" prefHeight="21.0" prefWidth="121.0" text="TINGGI BADAN  : ">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label id="umur" fx:id="umur" layoutX="23.0" layoutY="120.0" prefHeight="21.0" prefWidth="121.0" text="UMUR                :">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <TextField id="masukannama" fx:id="masukannama" layoutX="149.0" layoutY="45.0" style="-fx-background-color: E0E0E0;">
+         <effect>
+            <ColorAdjust />
+         </effect></TextField>
+      <TextField id="masukkantb" fx:id="masukantb" layoutX="149.0" layoutY="79.0" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: E0E0E0;" />
+      <TextField id="masukanumr" fx:id="masukanumr" layoutX="149.0" layoutY="115.0" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: E0E0E0;" />
+      <TextArea id="hasil" fx:id="hasil" layoutX="14.0" layoutY="251.0" prefHeight="198.0" prefWidth="329.0" style="-fx-background-image: E0E0E0;" />
+      <Label id="jenis" fx:id="jenis" layoutX="23.0" layoutY="153.0" prefHeight="21.0" prefWidth="121.0" text="JENIS KELAMIN  :">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <RadioButton id="rdL" fx:id="rdL" layoutX="149.0" layoutY="153.0" mnemonicParsing="false" text="LAKI LAKI">
+         <effect>
+            <Lighting diffuseConstant="0.83" specularConstant="0.1" specularExponent="40.0" surfaceScale="2.32">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></RadioButton>
+      <RadioButton id="rdP" fx:id="rdP" layoutX="150.0" layoutY="183.0" mnemonicParsing="false" text="PEREMPUAN">
+         <effect>
+            <Lighting diffuseConstant="0.95" specularExponent="40.0" surfaceScale="3.09">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></RadioButton>
+      <Button id="selesai" fx:id="selesai" layoutX="67.0" layoutY="211.0" mnemonicParsing="false" onAction="#selesai" text="SELESAI" />
+      <Button id="hapus" fx:id="hapus" layoutX="195.0" layoutY="211.0" mnemonicParsing="false" onAction="#hapus" text="HAPUS" />
+      <Label layoutX="268.0" layoutY="84.0" prefHeight="21.0" prefWidth="40.0" text="Cm">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="BLACK" />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="268.0" layoutY="120.0" prefHeight="21.0" prefWidth="59.0" text="Tahun">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+    </children>
+</AnchorPane>
